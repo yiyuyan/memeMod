@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "mememod",
+  "version": "${version}",
+  "name": "memeMod",
+  "description": "",
+  "authors": [
+    "KSmc_brigade"
+  ],
+  "contact": {
+    "repo": "https://github.com/yiyuyan/memeMod"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "cn.ksmcbrigade.mememod.client.MemeModClient"
+    ],
+    "main": [
+      "cn.ksmcbrigade.mememod.MemeMod"
+    ]
+  },
+  "mixins": [
+    "mememod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
